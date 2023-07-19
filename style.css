@@ -104,6 +104,7 @@
     width: 100px;
     font-size: 1.3rem;
     color: #dcdcdc;
+    display: none;
 }
 
 .total-input-container, .people-input-container {
@@ -111,6 +112,7 @@
 }
 
 .total-input, .people-input {
+    width: 230px;
      text-align: center;
      background-color: transparent;
      color: white;
@@ -122,7 +124,7 @@
 }
 
 .calc-btn {
-    width: 200px;
+    width: 230px;
     font-size: 1.2rem;
     margin-top: 20px;
     background-color: var(--iconcolors);
