@@ -4,6 +4,7 @@
     --iconsize: 1.8rem;
     --labelcolor: #dcdcdc;
     --chartesecolor:chartreuse;
+    --violetcolor:  violet;
 }
 
 * {
@@ -70,7 +71,7 @@
     color: #00ffff;
 }
 
-.app-container {
+.bill-container {
     width: 550px;
     height: auto;
     background-color: cornflowerblue;
@@ -92,64 +93,56 @@
     margin-bottom: 30px;
 }
 
-.amount-label {
+.amount {
     font-size: 3rem;
     font-weight: 500;
 }
 
-.total-label-container, .people-label-container {
+.total-container, .people-container {
     margin-bottom: 3%;
+    text-align: left;
+    display: flex;
+    justify-content: center;
 }
 
 .total-label, .people-label {
+    width: 100px;
     font-size: 1.3rem;
     color: #dcdcdc;
 }
 
 .total-input-container, .people-input-container {
-    margin-bottom: 5%;
+    margin-bottom: 5%;  
 }
 
-/*.total-input, .people-input {
-    width: 220px;
-    font-size: 2.3rem;
-    text-align: center;
-    color: var(--iconcolors);
-    background-color: transparent;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid dimgrey;
-    margin-bottom: 2%;
-    padding-bottom: 2%;
-}
-
-.calc-btn-container {
-    margin-top: 15px;
+.total-input, .people-input {
+     text-align: center;
+     background-color: transparent;
+     color: white;
+     border: none;
+     outline: none;
+     border-bottom: 1px solid #dcdcdc;
 }
 
 .calc-btn {
-    width: 160px;
-    font-size: 1.3rem;
+    width: 200px;
+    font-size: 1.2rem;
+    margin-top: 20px;
     background-color: var(--iconcolors);
     border: none;
     outline: none;
-    color: black;
     border-radius: 12px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding-top: 1.5px;
+    padding-bottom: 1.5px;
 }
 
 .reset-btn {
-    width: 80px;
+    margin-top: 30px;
+    font-size: 1.5rem;
+    color: white;
     background-color: transparent;
     border: none;
     outline: none;
-    margin-top: 10%;
-}
-
-.reset-btn i {
-    color: gainsboro;
-    font-size: 2rem;
 }
 
 .footer {
@@ -161,34 +154,4 @@
 .footer p {
     color: gray;
     font-size: 0.9rem;
-}
-
-
-
-
-@media screen and (max-width: 600px) {
-    .body {
-   
-    }
-    .intro-container {
-        display: none;
-    }
-    .app-container {
-        padding: 0;
-    }
-    .amount-label {
-        font-size: 4rem;
-    }
-
-    .form {
-        border: none;
-    }
-    .input-container {
-        margin-top: 2%;
-    }
-    .calc-btn {
-        margin-top: 15px;
-    }
-    .reset-btn-container {
-    margin-top: 5%;
 }
