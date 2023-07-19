@@ -89,20 +89,15 @@
     padding-bottom: 5%;
 }
 
-.amount-label-container {
-    margin-bottom: 30px;
-}
-
 .amount {
     font-size: 3rem;
     font-weight: 500;
 }
 
 .total-container, .people-container {
+    margin-top: 15px;
     margin-bottom: 3%;
-    text-align: left;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 .total-label, .people-label {
@@ -122,6 +117,8 @@
      border: none;
      outline: none;
      border-bottom: 1px solid #dcdcdc;
+     margin-bottom: 15px;
+     padding-bottom: 5px;
 }
 
 .calc-btn {
