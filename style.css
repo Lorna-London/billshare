@@ -1,88 +1,194 @@
+:root {
+    --bodycolor: #000000;
+    --iconcolors: #00ffff; 
+    --iconsize: 1.8rem;
+    --labelcolor: #dcdcdc;
+    --chartesecolor:chartreuse;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 .body {
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bodycolor);
 } 
 
 .header {
     display: flex;
     justify-content: space-between; 
+    align-items: center;
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
 }
 
 .logo {
-    color: gray;
+    font-size: var(--iconsize);
+    color: var(--iconcolors);
 }
 
-.fa-moon {
-    color:cornflowerblue;
-    font-size: 2rem;
+.moon-icon {
+    font-size: var(--iconsize);
+    color: var(--iconcolors);
+
 }
 
 .main {  
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: baseline;
     gap: 30px;
-  
 }
 
 .intro-container {
     width: 550px;
-    height: 300px;
-    background-color: yellow;
+    height: auto;
     padding: 20px;
     line-height: 1.5;
+    color: white;
 }
 
-h2 {
-    font-size: ;
+.intro-container h2 {
+    font-size: 2.5rem;
 }
 
-p {
-    font-size: 2em;
+.intro-container p {
+    font-size: 1.1rem;
+    color: darkgray;
+}
+
+.fa-coins {
+    font-size:  6rem;
+    padding-top: 10%;
+    padding-left: 20%;
+    color: #00ffff;
 }
 
 .app-container {
     width: 550px;
-    height: 300px;
+    height: auto;
     background-color: cornflowerblue;
+    background-color: transparent;
     color: white;
     padding: 20px;
 }
 
-.bill-amount {
-    font-size: 3em;
-}
-
-.calc-container {
-   width: 100vw;
-   margin-top: 20px;
-   display: flex;
-   justify-content: center;
-}
-
-.calculate-btn {
-    width: 300px;
-    font-size: 1.5rem;
-    padding: 10px;
-    background-color: transparent;
+.form {
+    display: block;
+    text-align: center;
+    border: 1px solid #dcdcdc;
     border-radius: 24px;
-    border: 1px solid gray;
+    padding-top: 2%;
+    padding-bottom: 5%;
 }
+
+.amount-label-container {
+    margin-bottom: 30px;
+}
+
+.amount-label {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.total-label-container, .people-label-container {
+    margin-bottom: 3%;
+}
+
+.total-label, .people-label {
+    font-size: 1.3rem;
+    color: #dcdcdc;
+}
+
+.total-input-container, .people-input-container {
+    margin-bottom: 5%;
+}
+
+/*.total-input, .people-input {
+    width: 220px;
+    font-size: 2.3rem;
+    text-align: center;
+    color: var(--iconcolors);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid dimgrey;
+    margin-bottom: 2%;
+    padding-bottom: 2%;
+}
+
+.calc-btn-container {
+    margin-top: 15px;
+}
+
+.calc-btn {
+    width: 160px;
+    font-size: 1.3rem;
+    background-color: var(--iconcolors);
+    border: none;
+    outline: none;
+    color: black;
+    border-radius: 12px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.reset-btn {
+    width: 80px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-top: 10%;
+}
+
+.reset-btn i {
+    color: gainsboro;
+    font-size: 2rem;
+}
+
+.footer {
+    margin-top: 10%;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.footer p {
+    color: gray;
+    font-size: 0.9rem;
+}
+
+
 
 
 @media screen and (max-width: 600px) {
+    .body {
+   
+    }
     .intro-container {
         display: none;
     }
     .app-container {
-       
+        padding: 0;
     }
+    .amount-label {
+        font-size: 4rem;
+    }
+
+    .form {
+        border: none;
+    }
+    .input-container {
+        margin-top: 2%;
+    }
+    .calc-btn {
+        margin-top: 15px;
+    }
+    .reset-btn-container {
+    margin-top: 5%;
 }
