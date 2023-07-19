@@ -3,27 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bill Share</title>
+    <title>doShare</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="body">
     <header class="header">
-        <h1 class="logo">Bill Share</h1>
-        <nav class="nav"><i class="fa-solid fa-moon"></i><nav>
+        <h1 class="logo">doShare</h1>
+        <nav class="nav"><i class="moon-icon fa-solid fa-moon" ></i><nav>
     </header>
     <main class="main">
         <section class="intro-container">
             <h2>Manage Your Expenses</h2>
             <p>Share your bills with friends and family</p>
+            <p><i class="fa-solid fa-coins"></i></p>
         </section>
         <section class="app-container">
-            <p></p>
-        </section>
-        <section class="calc-container">
-            <button class="calculate-btn">Calculate</button>
-        </section>
+            <form class="form">
+                <p class="amount-label-container"><label class="amount-label">£74.25</label></p>
+                <p class="total-label-container"><label class="total-label">Total</label></p>
+                <p class="total-input-container"><input class="total-input" value="352"></p>
+                <p class="people-label-container"><label class="people-label">People</label></p>
+                <p class="people-input-container"><input class="people-input" value="5"></p>
+                <p class="calc-btn-container"><button class="calc-btn">Calculate</button></p>
+                <p class="reset-btn-container"><button class="reset-btn"><i class="fa-solid fa-rotate-right"></i></button></p>
+            </form>
+        </section> 
     </main>
+        <footer class="footer">
+            <p>&copy Lorna London 2022</p>
+        </footer>
+   
 <script src="script.js"></script>
 </body>
 </html>
