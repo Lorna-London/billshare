@@ -90,7 +90,7 @@
     border: 1px solid var(--bordercolor);
     border-radius: 24px;
     padding-top: 2%;
-    padding-bottom: 2%;
+    padding-bottom: 4%;
 }
 
 .amount {
