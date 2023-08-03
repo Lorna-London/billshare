@@ -14,6 +14,9 @@ amount.textContent = '£';
   let decimalBillAmount = billAmount.toFixed(2); 
     amount.append(decimalBillAmount);
     console.log(decimalBillAmount);
+    if(amount.textContent === '£NaN') {
+      amount.textContent = "";
+    }
 });
 
 moon.addEventListener('click', function() {
@@ -21,7 +24,7 @@ moon.addEventListener('click', function() {
   root.style.setProperty('--themecolor', 'chartreuse'), moon.addEventListener('click', function() {
     root.style.setProperty('--themecolor', 'orange'), moon.addEventListener('click', function() {
       root.style.setProperty('--themecolor', 'deepskyblue'), moon.addEventListener('click', function() {
-        root.style.setProperty('--themecolor', 'blanchedalmond') , moon.addEventListener('click', function() {
+        root.style.setProperty('--themecolor', 'aliceblue') , moon.addEventListener('click', function() {
         root.style.setProperty('--themecolor', 'cyan')
          }) 
         })

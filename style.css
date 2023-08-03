@@ -4,11 +4,10 @@
     --iconsize: 1.8rem;
     --bordercolor: #dcdcdc;
     --chartese:chartreuse;
-    --violet:  rgb(255, 223, 164);
+    --orange:  rgb(255, 223, 164);
     --deepskyblue: deepskyblue;
     --lightskyblue: lightskyblue;
-    --orchid: --orchid;
-    --antiquewhite: blanchedalmond;
+    --aliceblue: aliceblue;
     --medviored: magenta;
 }
 
@@ -28,8 +27,8 @@
     justify-content: space-between; 
     align-items: center;
     padding-top: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .logo {
@@ -40,10 +39,6 @@
 .moon-icon {
     font-size: var(--iconsize);
     color: var(--themecolor); /*gainsbrow*/
-}
-
-.moon-icon:hover {
-    color: greenyellow;
 }
 
 .main {  
@@ -125,7 +120,7 @@
     text-align: center;
     background-color: transparent;
     font-size: 1.1rem;
-    color: var(--themecolor);
+    color: white;
     border: none;
     outline: none;
     border-bottom: 0.5px solid var(--bordercolor);
@@ -171,7 +166,7 @@ input[type=number] {
 }
 
 .reset-btn:hover {
-    color: greenyellow;
+    color: var(--themecolor);
 }
 
 .footer {
