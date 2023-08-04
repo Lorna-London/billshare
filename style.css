@@ -1,88 +1,209 @@
+:root {
+    --bodycolor: #000000;
+    --themecolor: cyan; 
+    --iconsize: 1.8rem;
+    --bordercolor: #dcdcdc;
+    --chartese:chartreuse;
+    --orange:  rgb(255, 223, 164);
+    --deepskyblue: deepskyblue;
+    --lightskyblue: lightskyblue;
+    --aliceblue: aliceblue;
+    --medviored: magenta;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 .body {
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bodycolor);
 } 
 
 .header {
     display: flex;
     justify-content: space-between; 
+    align-items: center;
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
 }
 
 .logo {
-    color: gray;
+    font-size: var(--iconsize);
+    color: var(--themecolor);
 }
 
-.fa-moon {
-    color:cornflowerblue;
-    font-size: 2rem;
+.moon-icon {
+    font-size: var(--iconsize);
+    color: var(--themecolor); /*gainsbrow*/
+}
+
+.moon-icon:hover {
+    transform: scale(110%);
+   
 }
 
 .main {  
-    margin-top: 100px;
+    /*margin-top: 50px;*/
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
-  
+    align-items: baseline;
+    /*gap: 30px;*/
 }
 
 .intro-container {
-    width: 550px;
-    height: 300px;
-    background-color: yellow;
+    /*width: 550px;*/
+    height: auto;
     padding: 20px;
     line-height: 1.5;
+    color: white;
+    /*margin-left: -40px;*/
 }
 
-h2 {
-    font-size: ;
+.intro-container h2 {
+    font-size: 2rem; /*2.5rem*/
 }
 
-p {
-    font-size: 2em;
+.intro-container p {
+    font-size: 1rem; /*1.1rem*/
+    color: darkgray;
 }
 
-.app-container {
+.coins-icon {
+    font-size:  6rem;
+    padding-top: 10%;
+    padding-left: 20%;
+    color: var(--themecolor);
+}
+
+.bill-container {
     width: 550px;
-    height: 300px;
+    height: auto;
     background-color: cornflowerblue;
+    background-color: transparent;
     color: white;
     padding: 20px;
 }
 
-.bill-amount {
-    font-size: 3em;
-}
-
-.calc-container {
-   width: 100vw;
-   margin-top: 20px;
-   display: flex;
-   justify-content: center;
-}
-
-.calculate-btn {
-    width: 300px;
-    font-size: 1.5rem;
-    padding: 10px;
-    background-color: transparent;
+.form {
+    display: block;
+    text-align: center;
+    border: 0.5px solid var(--bordercolor); /*1px*/
     border-radius: 24px;
-    border: 1px solid gray;
+    padding-top: 4%; /*2%*/
+    padding-bottom: 4%;
+}
+
+.amount {
+    font-size: 2.5rem; /*3rem*/
+    font-weight: 500;
+    color: white;
+}
+
+.total-container, .people-container {
+    margin-top: 15px;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+.total-label, .people-label {
+    width: 100px;
+    font-size: 1.3rem;
+    color: #dcdcdc;
+    display: none;
+}
+
+.total-input-container, .people-input-container {
+    margin-bottom: 5%;  
+}
+
+.total-input, .people-input {
+    width: 230px;
+    text-align: center;
+    background-color: transparent;
+    font-size: 1.1rem;
+    color: gainsboro;
+    border: none;
+    outline: none;
+    border-bottom: 0.5px solid var(--bordercolor);
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+/*.total-input:hover, .people-input:hover {
+    background-color: rgb(38, 37, 37);
+}*/
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  --moz-appearance: textfield;
+}
+
+.calc-btn {
+    width: 230px;
+    /*font-size: 0.9rem;*/
+    margin-top: 20px;
+    background-color: var(--themecolor);
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+/*.calc-btn:hover {
+   transform: scale(105%);
+}*/
+
+.calc-btn:active {
+    background-color: greenyellow;
+}
+
+.reset-btn {
+    margin-top: 30px;
+    font-size: 1.6rem; /*1.5rem original*/
+    color: white;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.reset-btn:hover {
+    color: var(--themecolor);
+}
+
+.footer {
+    margin-top: 10%;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.footer p {
+    color: gray;
+    font-size: 0.9rem;
+}
+
+@media screen and (min-width: 900px) {
+    .header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .main {
+        margin-top: 70px;
+        column-gap: 30px;
+    }
 }
 
 
-@media screen and (max-width: 600px) {
-    .intro-container {
-        display: none;
-    }
-    .app-container {
-       
-    }
-}
+/*alice blue and ghostwhite background form*/
