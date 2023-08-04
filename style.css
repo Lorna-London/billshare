@@ -41,6 +41,11 @@
     color: var(--themecolor); /*gainsbrow*/
 }
 
+.moon-icon:hover {
+    transform: scale(110%);
+   
+}
+
 .main {  
     /*margin-top: 50px;*/
     display: flex;
@@ -56,6 +61,7 @@
     padding: 20px;
     line-height: 1.5;
     color: white;
+    /*margin-left: -40px;*/
 }
 
 .intro-container h2 {
@@ -120,13 +126,17 @@
     text-align: center;
     background-color: transparent;
     font-size: 1.1rem;
-    color: white;
+    color: gainsboro;
     border: none;
     outline: none;
     border-bottom: 0.5px solid var(--bordercolor);
     margin-bottom: 15px;
     padding-bottom: 5px;
 }
+
+/*.total-input:hover, .people-input:hover {
+    background-color: rgb(38, 37, 37);
+}*/
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -151,6 +161,10 @@ input[type=number] {
     padding-top: 6px;
     padding-bottom: 6px;
 }
+
+/*.calc-btn:hover {
+   transform: scale(105%);
+}*/
 
 .calc-btn:active {
     background-color: greenyellow;
