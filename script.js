@@ -5,7 +5,7 @@ let amount = document.querySelector('.amount');
 let total = document.querySelector('.total-input');
 let people = document.querySelector('.people-input')
 
-let calculate = document.querySelector('.calc-btn');
+let calculate = document.querySelector('.calculate-btn');
 
 calculate.addEventListener('click', function(e) {
 e.preventDefault();
@@ -24,9 +24,7 @@ moon.addEventListener('click', function() {
   root.style.setProperty('--themecolor', 'chartreuse'), moon.addEventListener('click', function() {
     root.style.setProperty('--themecolor', 'orange'), moon.addEventListener('click', function() {
       root.style.setProperty('--themecolor', 'deepskyblue'), moon.addEventListener('click', function() {
-        root.style.setProperty('--themecolor', 'aliceblue') , moon.addEventListener('click', function() {
-        root.style.setProperty('--themecolor', 'cyan')
-         }) 
+        root.style.setProperty('--themecolor', 'cyan');
         })
       })
     })
