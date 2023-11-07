@@ -1,15 +1,14 @@
-
-const root = document.querySelector(':root');
+let root = document.querySelector(':root');
 let moon = document.querySelector('.moon-icon');
 let amount = document.querySelector('.amount');
 let total = document.querySelector('.total-input');
 let people = document.querySelector('.people-input')
 
-let calculate = document.querySelector('.calculate-btn');
+let calculate = document.querySelector('.calc-btn');
 
 calculate.addEventListener('click', function(e) {
 e.preventDefault();
-amount.textContent = '£';
+  amount.textContent = '£';
   let billAmount = total.value / people.value;
   let decimalBillAmount = billAmount.toFixed(2); 
     amount.append(decimalBillAmount);

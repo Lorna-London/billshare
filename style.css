@@ -142,7 +142,7 @@ input[type=number] {
   --moz-appearance: textfield;
 }
 
-.calculate-btn {
+.calc-btn {
     width: 230px;
     margin-top: 20px;
     background-color: var(--themecolor);
@@ -153,11 +153,11 @@ input[type=number] {
     padding-bottom: 6px;
 }
 
-.calculate-btn:active {
+.calc-btn:active {
     background-color: greenyellow;
 }
 
-.reset-btn {
+.reset-button {
     margin-top: 30px;
     font-size: 1.6rem; 
     color: white;
