@@ -149,8 +149,8 @@ input[type=number] {
     border: none;
     outline: none;
     border-radius: 12px;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .calc-btn:active {
