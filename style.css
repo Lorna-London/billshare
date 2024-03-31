@@ -190,4 +190,10 @@ input[type=number] {
         margin-top: 70px;
         column-gap: 30px;
     }
+
+    .amount {
+        position: absolute;
+        top: 9%;
+        left: 60%;
+    }
 }
